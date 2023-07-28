@@ -1,38 +1,391 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/queries.css" />
     <title>Auna Namkung, LCSWA</title>
   </head>
-  <body>
-    <h1>Auna Namkung, LCSWA</h1>
-    <h2>Where Ability Comes First</h2>
-    <nav class="header">
-      <div>Testing</div>
-      <ul>
-        <li>Home</li>
-        <li>About Auna</li>
-        <li>Services</li>
-        <li>Pricing</li>
-        <li>Book a Consultation</li>
-      </ul>
-    </nav>
-    <p>
-      Leading a happy, healthy, and impactful life requires more than fixing the
-      negative. It also requires increasing the positives in our lives. Our
-      minds naturally focus on the negative to reduce the possibility of
-      something bad happening. Now, this is necessary in some situations like
-      crossing the street, protecting yourself from strangers, or securing your
-      home. But when it comes to your emotions? Your productivity? Your
-      relationships? You function much better in a positive state of mind.
-    </p>
-    <p>
-      When your mind reaches a positive state, you not only feel better, but
-      your creativity rises, your energy levels increase, and you are able to
-      clearly see more opportunities.
-    </p>
-    <p>
-      Let’s take the first step together. <a href="#">Click here</a> to book
-      your first session today.
-    </p>
-  </body>
+  
+    <body>
+      <main class="main">
+        <header class="header">
+          <a href="#" class="logo-name">Auna Namkung, LCSWA</a>
+      
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li><a href="#" class="main-nav-link">About Auna</a></li>
+              <li><a href="#" class="main-nav-link">Services</a></li>
+              <li><a href="#" class="main-nav-link">Pricing</a></li>
+              <li>
+                <a href="#" class="main-nav-link nav-cta">Book a Consultation</a>
+              </li>
+            </ul>
+          </nav>
+      
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </header>
+        <section class="section-landing ">
+
+          
+
+          <div class="landing wrapper">
+            <div class="landing-text">
+              <h1 class="landing-heading heading-secondary">Therapeutic Services in a Supportive Environment</h1>
+              <div class="landing-secondary heading-primary">We can work together to create the life you want, identify what is getting in the way, and move towards a place of happiness and productivity.</div>
+              
+            </div>
+            <div class="landing-btn-container">
+              <a href="#" class="btn btn--full margin-right-sm"
+              >Book a consultation</a>
+              <a href="#" class="btn btn--outline">Learn more &rarr;</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-popup">
+          <div class="popup" id="popupElement">
+            <p> To better serve the community, I am currently operating on a sliding-scale model.<br/> Book a consultation to find out more.</p>
+            <button class="btn btn--full closePopupBtn">Close
+              <ion-icon class="close-icon" name="close"></ion-icon>
+            </button>
+        </div>
+        </section>
+
+        <section class="section-hero">
+          <div class="hero container">
+            <div class="hero-text-box">
+              <h3 class="heading-primary">About Auna Namkung, LCSWA</h3>
+              <p class="hero-description">
+                I graduated with a Masters in Social Work from the University of
+                North Carolina at Chapel Hill. I had the great fortune to complete
+                my field hours at UNC Psychiatry, where I offed therapy for
+                conditions including depression, anxiety, disability, chronic
+                pain, developmental delay, and addiction.<br />
+                <br />
+                Before I became a psychotherapist, I earned a Masters od education
+                from Florida State University and taught in the public school
+                system.
+              </p>
+
+              
+            </div>
+            <div class="hero-img-box">
+              <img
+                src="Auna-Namkung.jpg"
+                class="hero-portrait-img"
+                alt="Auna Namkung, LCSWA, poses with her seeing eye dog"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="section-how">
+          <div class="container">
+            <span class="subheading">Cultivate Positive Change</span>
+            <h2 class="heading-secondary">Experience the transformative effects of positive psychology in therapy.</h2>
+          </div>
+
+          <div class="container grid grid--2-cols grid--large-row-gap grid--center-v grid--1-cols-small">
+            <!-- STEP 1 -->
+            <div class="step-text-box">
+              <p class="step-title">Reach Happiness</p>
+             
+              <p class="step-description">
+                At the heart of my practice is a deep belief in the inherent resilience and potential within each person. I specialize in helping individuals overcome anxiety, depression, disability, and relationship difficulties. I understand that seeking therapy takes courage, and I am honored to accompany you on your journey towards a happier, more balanced life.
+              </p>
+            </div>
+            <div class="step-img-box">
+              <img src="Auna-Namkung.jpg" alt="test" class="step-img" />
+            </div>
+            <!-- STEP 2 -->
+            <div class="step-img-box">
+              <img src="Auna-Namkung.jpg" alt="test" class="step-img" />
+            </div>
+            <div class="step-text-box">
+              <p class="step-title">Cultivate Positive Change</p>
+           
+              <p class="step-description">
+                In our sessions, you can expect a warm, non-judgmental, and empathetic environment where you can freely express your thoughts and feelings. I believe that a strong therapeutic alliance built on trust and respect is essential for effective therapy. Together, we will explore your goals and develop practical strategies to help you overcome obstacles, develop healthy coping mechanisms, and build meaningful connections.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section-features">
+          <div class="container">
+            <div class="icons-grid grid grid--4-cols">
+              <div class="icon-box">
+                <ion-icon class="features-icon" name="videocam-sharp"></ion-icon>
+                <h3 class="heading-features">Offers Telehealth Appointments</h3>
+              </div>
+              <div class="icon-box">
+                <ion-icon class="features-icon" name="card-sharp"></ion-icon>
+                <h3 class="heading-features">Accepts Online Payments</h3>
+              </div>
+              <div class="icon-box">
+                <ion-icon class="features-icon" name="checkmark-done-sharp"></ion-icon>
+                <h3 class="heading-features">Sliding Scale</h3>
+              </div>
+              <div class="icon-box">
+                <ion-icon class="features-icon" name="people-sharp"></ion-icon>
+                <h3 class="heading-features">Accepting New Clients</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-form">
+         <div class="container">
+          <div class="form-flex-container">
+            <div class="form-description">
+              <h2 class="heading-form">Contact me </h2>
+              <p>
+                  Please don't hesitate to reach out if you have any questions or would like to schedule an appointment. I currently have availability in my practice and would be happy to accommodate your needs. Feel free to contact me by phone or email. <br>Current clients can request an appointment online by leaving a message bellow. 
+              </p>
+            </div>
+            <div class="form-grid">
+              
+              
+              <form action="https://formsubmit.co/taylorwjones31@gmail.com" method="POST">
+                <div class="form-text-box container">
+                  <div class="name-email-flexbox">
+                    <div class="name-email"> 
+                      <label for="name"></label>
+                      <input type="text" name="name" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="name-email">
+                      <label for="email"></label>
+                      <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="form-message">
+                    <label for="message"></label>
+                    <textarea rows="5" cols="50" type="text" name="message" id="message" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="g-recaptcha" data-sitekey="6LevTrckAAAAAFyGhTYCe2zsFzoPNV6tT_lRllmp"></div>
+                  <button type="submit" class="btn btn--full">Submit</button>
+                </div>
+              </form>
+              <div class="form-img-box" role="img" aria-label="Auna with dog">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="services-section">
+          <h4 class="services-title">Services</h4>
+          <div class=" services-container container">
+            <div class="service-box">
+              <button class="service-button">Obsessive-Compoulsive Disorder (OCD) </button>
+              <p class="service-description">
+                You are not alone. Obsessive-compulsive disorder (OCD) is more common than you may imagine, affecting people across all walks of life.
+                Characterized by persistent, unwanted thoughts (obsessions) and repetitive behaviors
+                (compulsions) that individuals feel compelled to perform, it is a chronic and often distressing
+                condition. Driven by distress and anxiety, OCD manifests in varied forms.
+                Rituals develop, such as excessive cleaning, checking, or arranging items in a specific order.
+                
+                
+                Together, you and I will incorporate techniques from Cognitive-
+                behavioral therapy (CBT), the most commonly used psychotherapy approach for OCD.
+                Within CBT, a specific form called Exposure and Response Prevention (ERP) is highly effective
+                in treating OCD. We may use ERP to gradually expose you to anxiety-provoking situations while
+                preventing the accompanying compulsive behaviors.</p>
+            </div>
+            <div class="service-box">
+              <button class="service-button">Depression</button>
+              <p class="service-description"> 
+                The combination of Cognitive Behavioral Therapy (CBT) and Positive Psychology is extremely
+                effective in combating depression. We will use CBT techniques to challenge negative thinking
+                patterns that contribute to your depression, which can bring you to a neutral state; however, it is
+                the use of Positive Psychology that will aid you in feeling truly happy. Through Positive
+                
+                Psychology, we will identify your strengths to build resilience, incorporate exercises that will
+                change your brain to think more positively, and enrich your relationships.</p>
+            </div>
+            <div class="service-box">
+              <button class="service-button">Anxiety</button>
+              <p class="service-description">
+                When a person thinks about negative experiences in the future repetitively, they could be experiencing
+                anxiety. These thoughts are a natural self-protection mechanism; however, when a person persistently
+                thinks of these negative thoughts without finding a solution, they become anxious. I can help you
+                identify when you start ruminating, identify triggers, and help you come up with a plan to address your
+                anxiety using Solution Focused Therapy and Cognitive Behavioral Therapy.</p>
+            </div> 
+            <div class="service-box">
+              <button class="service-button">Tolerating Stress</button>
+              <p class="service-description">
+                Life often presents us with stressful situations that cannot be changed. As a psychotherapist, I can assist you in managing stress through Dialectical Behavior Therapy (DBT). Through targeted emotion regulation strategies, we will explore ways for you to identify, understand, and effectively manage your emotions. Moreover, we will address interpersonal effectiveness, supporting you in developing healthy communication and assertiveness skills, ultimately reducing stress in your relationships.</p>
+            </div>
+            <div class="service-box">
+              <button class="service-button">Emotion Regulation</button>
+              <p class="service-description">
+                The key to emotion regulation is first exploring and identifying one’s emotions. I provide a safe and non-
+                judgmental place for you to do this. We will then identify triggers and behavior patterns that contribute
+                to emotion dysregulation. Through various therapeutic techniques, such as emotion identification
+                exercises and cognitive restructuring, you will learn practical skills to manage and regulate your
+                emotions effectively. I can also help you identify your values and support your growth, so your
+                actions align with your values, giving you peace and happiness.
+              </p>
+            </div>
+            <div class="service-box">
+              <button class="service-button">Major Life Changes</button>
+              <p class="service-description">
+                Major life changes can be expected or unexpected, typical, or maybe you’re the only person you know
+                experiencing your situation. These situations can be incredibly stressful, especially when you are
+                uncertain of your future. I can help you with strategies to manage your stress, assist in developing
+                coping strategies and problem-solving skills to manage challenges that arise during the
+                transition, making it easier for you to view your situation not as a loss but an opportunity for
+                growth. By working collaboratively, we will build resilience, adaptability, and a sense of
+                empowerment to embrace and thrive through life's transitions.</p>
+            </div>
+            <div class="service-box">
+              <button class="service-button">Pessimisim</button>
+              <p class="service-description">
+                Changing your brain or what is also known as cognitive restructuring to think more positively
+                begins with evidence-based exercises from the field of positive psychology. Often people who
+                have negative thought patterns were raised in an environment that taught them to be that way.
+                Fortunately, this also means you can teach your brain to build realistic and positive thought
+                patterns. Together you and I will identify your strengths, broaden your perspective, and
+                incorporate techniques from Positive Psychology which will create a ripple effective in your life
+                and the people around you.</p>
+            </div>
+            <div class="service-box">
+              <button class="service-button">Interpersonal Relationships</button>
+              <p class="service-description">
+                I can help you transform and create more positive relationships by helping you set healthy boundaries
+                and expressing your point of view in a kind and assertive manner. Often people sacrifice too much, are
+                disappointed in other’s behavior, or someone has so much stress it is released on the people who may
+                or may not be involved in the source of the stress. Together you and I will determine what is most
+                important: the relationship, your self-respect, or the goal of the situation. Then we will develop a plan to
+                manage these various situations.</p>
+            </div>
+            <div class="service-box">
+              <button class="service-button">Dissability</button>
+              <p class="service-description">
+                I personally understand what it is like to become disabled; however, you can still experience a
+                meaningful and happy life. Becoming disabled often effects your career, family, friends, and leisure
+                activities. It is an exceedingly difficult process; however, after going through the grief process, it can
+                also be an opportunity to build a new identity. I can help you with this process and connect you to
+                resources that will help you in building your new self.</p>
+            </div>
+            <div class="service-box">
+              <button class="service-button">Blindness</button>
+              <p class="service-description">
+                Growing up visually impaired (VI) or blind or becoming VI or blind is an experience that
+                affects all aspects of life. When a child grows up VI/blind, they often face increased stress at
+                school, can be socially ostracized, and experience anxiety and depression due to feeling alone.
+                The loss of sight later in life can be traumatizing because you lose a large part of who you are. I
+                specialize in helping individuals build their self-esteem, find ways to better socialize and
+                integrate into society, navigate the emotional challenges as someone who is VI/blind, and
+                navigate the Social Determinates of Health such as the educational, government, health care,
+                and transportation systems that effect daily life.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-section">
+          <div class="info-container container grid--3-cols">
+            <ul class="info-column">
+              <li>Approaches</li>
+              <li>Cognitive Behavioral Therapy (CBT)</li>
+              <li>Emotionally Focused</li>
+              <li>Trauma Focused</li>
+              <li>Strength-Based</li>
+              <li>Mindfulness-Based Cognitive Therapy (MBCT)</li>
+              <li>Person-Centered</li>
+              <li>Positive Psycology</li>
+              <li>Exposure Response Prevention</li>
+            </ul>
+
+            <ul class="info-column">
+              <li>Insurance Accepted</li>
+              <li>BlueCross and BlueShield</li>
+            </ul>
+
+            <ul class="info-column">
+              <li>Fees</li>
+              <li>Psychotherapy: $135</li>
+            </ul>
+          </div>
+        </section>
+
+      </main>
+
+      
+
+      <footer class="footer">
+        <div class="container grid grid--3-cols">
+          <div class="logo-col">
+            <a href="#" class="footer-logo logo-name">Auna Namkung, LCSWA</a>
+           
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+              </li>
+            </ul>
+           
+            <p class="copyright">Copyright &copy; <span class="year">2023</span> by Auna Namkung LLC. <br> All rights reserved.</p>
+
+          </div>
+          <div class="address-col-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p>217 West Winmore Av. <br>
+                 Chapel Hill, NC 27516</p>
+              <p>
+                <a class="footer-link" href="tel:910-920-6362">910-920-6362</a><br>
+                <a class="footer-link" href="mailto:emailadress@email.com">emailadress@email.com</a>
+          
+            </div>
+          <nav class="nav-col">
+            <p class="footer-heading">Navigation</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Home</a></li>
+              <li><a class="footer-link" href="#">About Auna</a></li>
+              <li><a class="footer-link" href="#">Services</a></li>
+              <li><a class="footer-link" href="#">Pricing</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="script.js"></script>
+      <script src="https://www.google.com/recaptcha/enterprise.js?render=6LevTrckAAAAAFyGhTYCe2zsFzoPNV6tT_lRllmp"></script>
+      <script>
+      // grecaptcha.enterprise.ready(function() {
+      //     grecaptcha.enterprise.execute('6LevTrckAAAAAFyGhTYCe2zsFzoPNV6tT_lRllmp', {action: 'login'}).then(function(token) {
+      //       ...
+      //     });
+      // });
+      </script>
+    </body>
+
 </html>
+
