@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +18,9 @@
     <link rel="stylesheet" type="text/css" href="css/queries.css" />
     <title>Auna Namkung, LCSWA</title>
   </head>
+
+
+
   
     <body>
       <main class="main">
@@ -25,11 +29,13 @@
       
           <nav class="main-nav">
             <ul class="main-nav-list">
-              <li><a href="#" class="main-nav-link">About Auna</a></li>
-              <li><a href="#" class="main-nav-link">Services</a></li>
-              <li><a href="#" class="main-nav-link">Pricing</a></li>
+              <li><a href="#hero" class="main-nav-link">About Auna</a></li>
+              <li><a href="#services" class="main-nav-link">Services</a></li>
+              <li><a href="#info" class="main-nav-link">Pricing</a></li>
               <li>
-                <a href="#" class="main-nav-link nav-cta">Book a Consultation</a>
+                <!-- Old button -->
+                <!-- <a href="#" class="main-nav-link nav-cta">Book a Consultation</a> -->
+                <a href="https://auna-namkung.clientsecure.me" class="btn btn--full spwidget-button" data-spwidget-scope-id="b7e41358-3973-4a88-847f-8394a897f50e" data-spwidget-scope-uri="auna-namkung" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Appointment</a>
               </li>
             </ul>
           </nav>
@@ -46,13 +52,17 @@
           <div class="landing wrapper">
             <div class="landing-text">
               <h1 class="landing-heading heading-secondary">Therapeutic Services in a Supportive Environment</h1>
-              <div class="landing-secondary heading-primary">We can work together to create the life you want, identify what is getting in the way, and move towards a place of happiness and productivity.</div>
+              <div class="landing-secondary heading-primary">We can work together to create the life you want, identify what is getting in the way, and climb towards a place of happiness and productivity.</div>
               
             </div>
             <div class="landing-btn-container">
-              <a href="#" class="btn btn--full margin-right-sm"
-              >Book a consultation</a>
-              <a href="#" class="btn btn--outline">Learn more &rarr;</a>
+                 <!-- Old button -->
+              <!-- <a href="#" class="btn btn--full margin-right-sm"
+              >Book a consultation</a> -->
+           
+             
+              <a href="https://auna-namkung.clientsecure.me" class="spwidget-button btn btn--full margin-right-sm" data-spwidget-scope-id="b7e41358-3973-4a88-847f-8394a897f50e" data-spwidget-scope-uri="auna-namkung" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Appointment</a>
+              <a href="#how" class="btn btn--outline">Learn more &rarr;</a>
             </div>
           </div>
         </section>
@@ -66,7 +76,7 @@
         </div>
         </section>
 
-        <section class="section-hero">
+        <section class="section-hero" id="hero">
           <div class="hero container">
             <div class="hero-text-box">
               <h3 class="heading-primary">About Auna Namkung, LCSWA</h3>
@@ -94,7 +104,7 @@
           </div>
         </section>
 
-        <section class="section-how">
+        <section class="section-how" id="how">
           <div class="container">
             <span class="subheading">Cultivate Positive Change</span>
             <h2 class="heading-secondary">Experience the transformative effects of positive psychology in therapy.</h2>
@@ -150,6 +160,8 @@
           </div>
         </section>
 
+        <div class="spwidget-button-wrapper"><a href="https://auna-namkung.clientsecure.me" class="spwidget-button btn btn--full" data-spwidget-scope-id="b7e41358-3973-4a88-847f-8394a897f50e" data-spwidget-scope-uri="auna-namkung" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Appointment</a></div>
+
         <section class="section-form">
          <div class="container">
           <div class="form-flex-container">
@@ -190,7 +202,7 @@
         </div>
         </section>
 
-        <section class="services-section">
+        <section class="services-section" id="services">
           <h4 class="services-title">Services</h4>
           <div class=" services-container container">
             <div class="service-box">
@@ -301,7 +313,7 @@
           </div>
         </section>
 
-        <section class="info-section">
+        <section class="info-section" id="info">
           <div class="info-container container grid--3-cols">
             <ul class="info-column">
               <li>Approaches</li>
@@ -365,9 +377,9 @@
             <p class="footer-heading">Navigation</p>
             <ul class="footer-nav">
               <li><a class="footer-link" href="#">Home</a></li>
-              <li><a class="footer-link" href="#">About Auna</a></li>
-              <li><a class="footer-link" href="#">Services</a></li>
-              <li><a class="footer-link" href="#">Pricing</a></li>
+              <li><a class="footer-link" href="#hero">About Auna</a></li>
+              <li><a class="footer-link" href="#services">Services</a></li>
+              <li><a class="footer-link" href="#info">Pricing</a></li>
             </ul>
           </nav>
           
@@ -378,6 +390,7 @@
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       <script src="script.js"></script>
       <script src="https://www.google.com/recaptcha/enterprise.js?render=6LevTrckAAAAAFyGhTYCe2zsFzoPNV6tT_lRllmp"></script>
+      <script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script>
       <script>
       // grecaptcha.enterprise.ready(function() {
       //     grecaptcha.enterprise.execute('6LevTrckAAAAAFyGhTYCe2zsFzoPNV6tT_lRllmp', {action: 'login'}).then(function(token) {
@@ -388,4 +401,3 @@
     </body>
 
 </html>
-
