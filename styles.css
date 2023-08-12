@@ -92,7 +92,7 @@
 /* ********************************************* */
 
 .wrapper {
-  height: 100vh;
+  height: auto;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -116,7 +116,7 @@
   height: auto;
   width: 80rem;
   padding: 4.8rem;
-  background-color: #f1f6ef;
+  background-color: rgba(241, 246, 239, 0.925);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.4);
 }
 
@@ -125,15 +125,16 @@
 }
 
 .landing-secondary {
+  line-height: 1.3;
   margin-bottom: 1rem;
 }
 
-.landing-background {
+/* .landing-background {
   height: 80rem;
   width: 100%;
   position: absolute;
   object-fit: cover;
-}
+} */
 
 .landing-btn-container {
   padding: 4.8rem;
@@ -184,7 +185,6 @@
   bottom: 0;
   width: 100%;
   height: auto;
-  padding: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,12 +202,12 @@
 }
 
 .hidden {
-  height: 0;
   display: none;
   pointer-events: none;
 }
 
 .popup p {
+  padding: 2.4rem;
   font-size: 2.4rem;
 }
 
@@ -345,6 +345,34 @@
 
 .info-column li {
   margin: 0 0.8rem 1.2rem;
+}
+
+/* ********************************************* */
+/* Widget From Simple Practice */
+/* ********************************************* */
+
+.spwidget-button-wrapper {
+  text-align: center;
+}
+
+/* .spwidget-button {
+ display: inline-block;
+  padding: 1.6rem 3.2rem;
+  color: #fff !important;
+  background: #52b788;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none; 
+}
+
+.spwidget-button:hover {
+   background: #40916c; 
+} */
+
+.spwidget-button:active {
+  color: rgba(255, 255, 255, 0.75) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
 }
 
 /* ********************************************* */
@@ -541,7 +569,7 @@
 .service-button:hover,
 .service-button:active {
   font-size: 2.8rem;
-  background-color: #52b788;
+  background-color: #1b4332;
 }
 
 .service-description {
